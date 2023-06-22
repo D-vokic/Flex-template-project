@@ -1,0 +1,651 @@
+/*---------------------------
+GOOGLE FONTS
+-----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Gugi|Kaushan+Script|source+Sans+Pro');
+
+/*---------------------------
+VARIABLES
+-----------------------------*/
+:root {
+  --grayColor: #a7a7a7;
+  --white: white;
+}
+
+/*---------------------------
+DEFAULT STYLES
+-----------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.6s ease-out;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kaushan Script', cursive;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 70px 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btn {
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem 2.5rem;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: var(--grayColor);
+  transition: 0.6s ease-out;
+  cursor: pointer;
+  transform: translatex(10px);
+}
+
+.section-subtitle {
+  color: red;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-subtitle::after {
+  display: block;
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: red;
+  margin-top: 0.8rem;
+}
+
+/*---------------------------
+HEADER SECTION
+-----------------------------*/
+
+.header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('img/header.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  position: relative;
+}
+
+.header > .nav {
+  background-color: var(--white);
+  position: relative;
+  top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.header > .nav > .logo {
+  color: black;
+  font-size: 2rem;
+}
+
+.header > .nav > .logo:hover {
+  transform: skewx(20deg);
+  text-decoration: none;
+}
+
+.header > .nav > .logo > span {
+  color: red;
+}
+
+.header > .nav > .logo > span:hover {
+  color: black;
+}
+
+.header > .nav > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav > ul > li > a {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1rem;
+}
+
+.nav > ul > li > a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.header > .hgroup {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  height: 80vh;
+  max-width: 600px;
+}
+
+.hgroup h1 {
+  font-size: 3rem;
+}
+
+/*---------------------------
+ABOUT SECTION
+-----------------------------*/
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about > article {
+  flex-basis: 45%;
+}
+
+.about > article > h3 {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.about > article > p {
+  margin-bottom: 1rem;
+}
+
+/*---------------------------
+MUMBERS SECTION
+-----------------------------*/
+
+.numbers {
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('img/section8.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.numbers > .numbers-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.numbers > .numbers-content > article > p {
+  color: red;
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.numbers > .numbers-content > article > h3 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*---------------------------
+PRICE SECTION
+-----------------------------*/
+
+.price > .section-subtitle,
+.price > h3,
+.price > p {
+  text-align: center;
+}
+
+.price > h3 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.price > p {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.price > .section-subtitle::after {
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.price > .price-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price > .price-content h3 {
+  color: red;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.price > .price-content li {
+  padding-bottom: 1rem;
+}
+
+.price > .price-content > article:nth-child(2) {
+  border: 1px solid #333;
+}
+
+.price > .price-content > article {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.price > .price-content > article:hover {
+  transform: rotate(360deg);
+}
+
+/*---------------------------------------
+BANNER SECTION - onako kako sam ja uradio
+-------------------------------------------*/
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('img/banner.webp');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  text-align: right;
+}
+
+.banner .section-subtitle::after {
+  margin: 0.8rem 4.5rem auto auto;
+  width: 100px;
+}
+
+.banner > .banner-content > h3 {
+  color: var(--white);
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.banner > .banner-content > p {
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-left: 50%;
+  min-width: 500px;
+}
+
+.banner > .banner-content > .btn {
+  padding: 0.5rem 2.5rem;
+}
+
+.rest {
+  background-color: red;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.rest > .section-subtitle {
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.rest > .section-subtitle::after {
+  display: none;
+}
+
+.rest > h3 {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+/*-------------------------
+GRID SECTION
+---------------------------*/
+
+.grid {
+  padding: 0;
+}
+
+.grid .grid-heading {
+  text-align: center;
+  background-color: red;
+  padding: 50px 0;
+  color: var(--white);
+}
+
+.grid .grid-heading .section-subtitle {
+  color: var(--white);
+}
+
+.grid .grid-heading h3 {
+  font-size: 2rem;
+}
+
+.grid .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 400px 400px;
+  grid-template-rows: repeat(2, 50vh);
+}
+
+.grid img {
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.grid .grid-item {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+/*-------------------------
+NAV SECTION
+---------------------------*/
+
+.social > ul {
+  top: -20%;
+  left: 50%;
+  transform: translate(20%, -50%);
+}
+
+.social {
+  position: relative;
+  top: 20px;
+}
+.social ul li {
+  display: block;
+  margin: 0 5rem;
+  border: 1px solid white;
+  max-width: 500px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+.social ul li:hover {
+  transform: translate(210px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: red;
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: red;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  transform: rotate(0deg);
+}
+
+/*-------------------------
+FOOTER SECTION
+---------------------------*/
+.footer-dark {
+  background-image: linear-gradient(
+    90deg,
+    #020024 0%,
+    #090979 35%,
+    #00d4ff 100%
+  );
+  padding: 50px 0;
+  height: 70vh;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row .col {
+  flex-basis: 35%;
+}
+
+.row .col h3 {
+  font-size: 1.5rem;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.row .col p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.row .col ul a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright {
+  text-align: center;
+  background-image: linear-gradient(
+    90deg,
+    #020024 0%,
+    #090979 35%,
+    #00d4ff 100%
+  );
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 1rem;
+  margin-top: -100px;
+}
+
+/*---------------------------
+RESPONSIVE
+-----------------------------*/
+
+@media (max-width: 992px) {
+  .about {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .numbers > .numbers-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .numbers > .numbers-content > article {
+    flex-basis: 45%;
+  }
+
+  .about > article {
+    flex-basis: 80%;
+  }
+  .banner > .banner-content > p {
+    margin-left: 30%;
+  }
+  .brands > .brands-content {
+    align-items: center;
+    text-align: center;
+  }
+  .brands p {
+    text-align: center;
+  }
+  .row {
+    justify-content: center;
+  }
+
+  .social{
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header > .nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .numbers > .numbers-content {
+    gap: 1rem;
+  }
+  .numbers > .numbers-content > article {
+    flex-basis: 80%;
+  }
+
+  .price > .price-content {
+    flex-direction: column;
+  }
+
+  .price > .price-content > article {
+    width: 80%;
+  }
+
+  .banner > .banner-content > h3 {
+    font-size: 1.4rem;
+  }
+
+  .banner > .banner-content > p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .banner > .banner-content > p {
+    margin-left: 0%;
+  }
+  .brands h3 {
+    font-size: 1.5rem;
+  }
+  .row {
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .col {
+    width: 80%;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .header > .nav {
+    width: 90%;
+  }
+
+  .header > .nav > ul {
+    gap: 0.5rem;
+  }
+
+  .hgroup h1 {
+    font-size: 1.8rem;
+  }
+
+  .nav > ul > li > a {
+    font-size: 0.7rem;
+  }
+
+  .header > .hgroup > p {
+    font-size: 0.8rem;
+  }
+
+  .about > article {
+    flex-basis: 100%;
+  }
+
+  .about > article > h3 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+  }
+
+  .numbers > .numbers-content > article > h3 {
+    font-size: 1.5rem;
+  }
+
+  .price > .price-content {
+    gap: 0.3rem;
+  }
+
+  .price > .price-content > article > ul > li {
+    line-height: 1;
+  }
+  .banner > .banner-content {
+    text-align: center;
+  }
+  .banner .section-subtitle::after {
+    margin: auto;
+    margin-top: 1rem;
+    width: 100px;
+  }
+  .banner > .banner-content > p {
+    min-width: 100px;
+  }
+  
+  .brands h3 {
+    font-size: 1rem;
+  }
+  .brands p {
+    font-size: 0.8rem;
+  }
+  .copyright {
+    
+    
+    padding-bottom: 1rem;
+    padding-top: 14rem;
+  }
+}
+/* @media (width <= 992px) {
+  .social{
+    display: none;
+  }
+} */
