@@ -1,4 +1,4 @@
-# 5-Flex-template-project
+# Flex-template-project
  https://D-vokic.github.io/5-Flex-template-project/
 
 Hi, I am Duško.
