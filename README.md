@@ -1,5 +1,6 @@
 # Flex-template-project
- https://D-vokic.github.io/5-Flex-template-project/
+ 
+ Check demo of this project [here](https://d-vokic.github.io/Flex-template-project/)
 
 Hi, I am Duško.
 
